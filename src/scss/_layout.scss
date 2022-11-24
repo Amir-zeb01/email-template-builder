@@ -1,0 +1,31 @@
+$drawerWidth: 250px;
+.main_layout {
+  display: flex;
+  align-items: stretch;
+  justify-content: flex-start;
+}
+.primary_navigation {
+  width: $drawerWidth;
+  height: 100vh;
+  border-right: 1px solid $borderColor;
+  background-color: #ffffff;
+  z-index: 999;
+}
+.main_layout > .primary_container {
+  height: 100vh;
+  width: calc(100% - $drawerWidth);
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+@media (min-width: 992px) {
+  .main_layout > .primary_container {
+    @include ScrollBar();
+  }
+}
+
+@media (max-width: 991px) {
+  .main_layout > .primary_container {
+    width: 100%;
+  }
+}

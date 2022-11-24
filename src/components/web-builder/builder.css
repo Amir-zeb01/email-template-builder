@@ -1,0 +1,30 @@
+.gjs-pn-save-file-actions >div:last-child{
+    position: absolute;
+    top: 5px;
+    right: -65px;
+}
+
+.gjs-pn-save-file-actions >div:last-child >span{
+    color: #b9a5a6;
+    font-size: 12px;
+    padding: 5px 12px;
+    border-radius: 25px;
+    background-color: #463a3c;
+    border:1px solid  #3f3436;
+}
+.gjs-pn-save-file-actions >div:last-child >span:hover{
+    border-color: #463a3c;
+    background-color: #3f3436;
+}
+.gjs-am-file-uploader{
+    display: none;
+}
+.gjs-am-assets-cont{
+    width: 100%;
+}
+/* .gjs-am-assets{
+    display: none;
+}
+.gjs-am-assets-cont{
+    height:auto;
+} */
